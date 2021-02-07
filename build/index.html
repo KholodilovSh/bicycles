@@ -14,23 +14,25 @@
 </head>
 
 <body>
-  <header class="main-header container container--tablet-mobile">
-    <a class="main-header__link">
-      <svg width="68" height="20" viewBox="0 0 68 20">
-        <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
-      </svg>
-    </a>
-    <nav class="container">
-      <ul class="main-header__nav">
-        <li class="main-header__part"><a href="#about-us" tabindex="0">О нас</a></li>
-        <li class="main-header__part"><a href="#bicycles" tabindex="0">Виды велосипедов</a></li>
-        <li class="main-header__part"><a href="#video" tabindex="0">Видео про велосипеды</a></li>
-        <li class="main-header__part"><a href="#contacts" tabindex="0">Контакты</a></li>
-      </ul>
-    </nav>
-    <button class="main-header__button main-header__button--no-js" type="button">
-      <span class="visually-hidden">Управление меню</span>
-    </button>
+  <header class="main-header">
+    <div class="container container--tablet-mobile">
+      <a class="main-header__link">
+        <svg width="68" height="20" viewBox="0 0 68 20">
+          <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <nav class="container">
+        <ul class="main-header__nav">
+          <li class="main-header__part"><a href="#about-us" tabindex="0">О нас</a></li>
+          <li class="main-header__part"><a href="#bicycles" tabindex="0">Виды велосипедов</a></li>
+          <li class="main-header__part"><a href="#video" tabindex="0">Видео про велосипеды</a></li>
+          <li class="main-header__part"><a href="#contacts" tabindex="0">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="main-header__button main-header__button--no-js" type="button">
+        <span class="visually-hidden">Управление меню</span>
+      </button>
+    </div>
   </header>
   <main>
     <div class="wrap-promo-order container">
@@ -78,71 +80,75 @@
         <li>Профессиональные консультации!</li>
       </ol>
     </section>
-    <section class="variants container container--variants">
+    <section class="variants">
       <a name="bicycles"></a>
-      <h2>Виды велосипедов</h2>
-      <ul class="variants__list">
-        <li class="variants__item variants__item--ring">
-          <picture>
-            <!-- 1х: 341px; 2x: 682px -->
-            <source type="image/webp" media="(min-width: 1024px)" srcset="img/andreas-haimerl_desktop@1x.webp 1x, img/andreas-haimerl_desktop@2x.webp 2x">
-            <!-- 1х: 270px; 2x: 540px -->
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/andreas-haimerl_tablet@1x.webp 1x, img/andreas-haimerl_tablet@2x.webp 2x">
-            <!-- 1х: 270px; 2x: 540px -->
-            <source type="image/webp" srcset="img/andreas-haimerl_mobile@1x.webp 1x, img/andreas-haimerl_mobile@2x.webp 2x">
-            <!-- 1х: 270px; 2x: 540px -->
-            <img src="img/andreas-haimerl_mobile@1x.png" srcset="img/andreas-haimerl_mobile@2x.png 2x" width="341" height="503" alt="Велосипед около стены">
-          </picture>
-          <p>Дорожный велосипед</p>
-        </li>
-        <li class="variants__item variants__item--square">
-          <picture>
-            <!-- 1х: 341px; 2x: 682px -->
-            <source type="image/webp" media="(min-width: 1024px)" srcset="img/eberhard-grossgasteiger_desktop@1x.webp 1x, img/eberhard-grossgasteiger_desktop@2x.webp 2x">
-            <!-- 1х: 270px; 2x: 540px -->
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/eberhard-grossgasteiger_tablet@1x.webp 1x, img/eberhard-grossgasteiger_tablet@2x.webp 2x">
-            <!-- 1х: 270px; 2x: 540px -->
-            <source type="image/webp" srcset="img/eberhard-grossgasteiger_mobile@1x.webp 1x, img/eberhard-grossgasteiger_mobile@2x.webp 2x">
-            <!-- 1х: 270px; 2x: 540px -->
-            <img src="img/eberhard-grossgasteiger_mobile@1x.png" srcset="img/eberhard-grossgasteiger_mobile@2x.png 2x" width="341" height="566" alt="Велосипед на горной тропе">
-          </picture>
-          <p>Горный велосипед</p>
-        </li>
-        <li class="variants__item  variants__item--ring-little">
-          <picture>
-            <!-- 1х: 341px; 2x: 682px -->
-            <source type="image/webp" media="(min-width: 1024px)" srcset="img/roger-goh_desktop@1x.webp 1x, img/roger-goh_desktop@2x.webp 2x">
-            <!-- 1х: 270px; 2x: 540px -->
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/roger-goh_tablet@1x.webp 1x, img/roger-goh_tablet@2x.webp 2x">
-            <!-- 1х: 270px; 2x: 540px -->
-            <source type="image/webp" srcset="img/roger-goh_mobile@1x.webp 1x, img/roger-goh_mobile@2x.webp 2x">
-            <!-- 1х: 270px; 2x: 540px -->
-            <img src="img/roger-goh_mobile@1x.png" srcset="img/roger-goh_mobile@2x.png 2x" width="341" height="513" alt="Велосипед около парадной">
-          </picture>
-          <p>Детский велосипед</p>
-        </li>
-      </ul>
+      <div class="container container--variants">
+        <h2>Виды велосипедов</h2>
+        <ul class="variants__list">
+          <li class="variants__item variants__item--ring">
+            <picture>
+              <!-- 1х: 341px; 2x: 682px -->
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/andreas-haimerl_desktop@1x.webp 1x, img/andreas-haimerl_desktop@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/andreas-haimerl_tablet@1x.webp 1x, img/andreas-haimerl_tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/andreas-haimerl_mobile@1x.webp 1x, img/andreas-haimerl_mobile@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img src="img/andreas-haimerl_mobile@1x.png" srcset="img/andreas-haimerl_mobile@2x.png 2x" width="341" height="503" alt="Велосипед около стены">
+            </picture>
+            <p>Дорожный велосипед</p>
+          </li>
+          <li class="variants__item variants__item--square">
+            <picture>
+              <!-- 1х: 341px; 2x: 682px -->
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/eberhard-grossgasteiger_desktop@1x.webp 1x, img/eberhard-grossgasteiger_desktop@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/eberhard-grossgasteiger_tablet@1x.webp 1x, img/eberhard-grossgasteiger_tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/eberhard-grossgasteiger_mobile@1x.webp 1x, img/eberhard-grossgasteiger_mobile@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img src="img/eberhard-grossgasteiger_mobile@1x.png" srcset="img/eberhard-grossgasteiger_mobile@2x.png 2x" width="341" height="566" alt="Велосипед на горной тропе">
+            </picture>
+            <p>Горный велосипед</p>
+          </li>
+          <li class="variants__item  variants__item--ring-little">
+            <picture>
+              <!-- 1х: 341px; 2x: 682px -->
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/roger-goh_desktop@1x.webp 1x, img/roger-goh_desktop@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/roger-goh_tablet@1x.webp 1x, img/roger-goh_tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/roger-goh_mobile@1x.webp 1x, img/roger-goh_mobile@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img src="img/roger-goh_mobile@1x.png" srcset="img/roger-goh_mobile@2x.png 2x" width="341" height="513" alt="Велосипед около парадной">
+            </picture>
+            <p>Детский велосипед</p>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="video container container--video">
+    <section class="video">
       <a name="video"></a>
       <div class="video__wrap">
         <h2>Видео про велосипеды</h2>
-        <p>В этом видео мы подробно расскажем про особенности выбора
+        <p class="container container--video">В этом видео мы подробно расскажем про особенности выбора
           велосипеда для себя.</p>
       </div>
-      <div class="video__player">
-        <picture>
-          <!-- 1х: 929px; 2x: 1858px -->
-          <source type="image/webp" media="(min-width: 1024px)" srcset="img/josh-nuttall_desktop@1x.webp 1x, img/josh-nuttall_desktop@2x.webp 2x">
-          <!-- 1х: 503px; 2x: 1006px -->
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/josh-nuttall_tablet@1x.webp 1x, img/josh-nuttall_tablet@2x.webp 2x">
-          <!-- 1х: 288px; 2x: 576px -->
-          <source type="image/webp" srcset="img/josh-nuttall_mobile@1x.webp 1x, img/josh-nuttall_mobile@2x.webp 2x">
-          <!-- 1х: 288px; 2x: 576px -->
-          <img src="img/josh-nuttall_mobile@1x.png" srcset="img/josh-nuttall_mobile@2x.png 2x" width="929" height="522" alt="Велосипед крупным планом">
-        </picture>
-        <button class="video__btn" type="button" aria-label="запустить видео">
-        </button>
+      <div class="container">
+        <div class="video__player">
+          <picture>
+            <!-- 1х: 929px; 2x: 1858px -->
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/josh-nuttall_desktop@1x.webp 1x, img/josh-nuttall_desktop@2x.webp 2x">
+            <!-- 1х: 503px; 2x: 1006px -->
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/josh-nuttall_tablet@1x.webp 1x, img/josh-nuttall_tablet@2x.webp 2x">
+            <!-- 1х: 288px; 2x: 576px -->
+            <source type="image/webp" srcset="img/josh-nuttall_mobile@1x.webp 1x, img/josh-nuttall_mobile@2x.webp 2x">
+            <!-- 1х: 288px; 2x: 576px -->
+            <img src="img/josh-nuttall_mobile@1x.png" srcset="img/josh-nuttall_mobile@2x.png 2x" width="929" height="522" alt="Велосипед крупным планом">
+          </picture>
+          <button class="video__btn" type="button" aria-label="запустить видео">
+          </button>
+        </div>
       </div>
     </section>
   </main>

@@ -78,7 +78,6 @@
   p {
     display: inline;
     position: relative;
-    padding: 5px;
     margin-left: 33.2%;
     font-size: 16px;
     line-height: 22px;
@@ -86,6 +85,7 @@
 
     @media (max-width: $tablet-width-only) {
       margin-left: 18.2%;
+      padding: 5px;
     }
 
     @media (max-width: $mobile-width-only) {
@@ -108,7 +108,7 @@
       content: "";
       position: absolute;
       left: -40px;
-      top: 5px;
+      top: 0;
       width: 26px;
       height: 20px;
       background-image: url("../img/post.svg");
@@ -137,11 +137,11 @@
 .contacts__telephone {
   display: inline;
   position: relative;
-  margin-left: 112px;
+  margin-left: 120px;
   padding: 5px;
   font-size: 16px;
   line-height: 32px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
   color: $black-05;
 
   @media (max-width: $tablet-width-only) {
@@ -166,7 +166,7 @@
   &::after {
     content: "";
     position: absolute;
-    left: -34px;
+    left: -33px;
     top: 2px;
     width: 22px;
     height: 23px;
