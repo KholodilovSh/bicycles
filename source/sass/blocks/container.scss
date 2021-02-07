@@ -1,8 +1,8 @@
 .container {
   position: relative;
   margin: 0 auto;
-  max-width: 1440px;
-  min-width: 320px;
+  max-width: $max-width;
+  min-width: $min-width;
 
   &--submit {
     @media (max-width: $tablet-width-only) {
@@ -11,6 +11,20 @@
 
     @media (max-width: $mobile-width-only) {
       max-width: 288px;
+      min-width: 288px;
+    }
+  }
+
+  &--video {
+    max-width: 340px;
+
+    @media (max-width: $tablet-width-only) {
+      max-width: 429px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      width: 288px;
+      // max-width: none;
       min-width: 288px;
     }
   }

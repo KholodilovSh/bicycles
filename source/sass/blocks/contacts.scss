@@ -53,24 +53,30 @@
   }
 
   iframe {
+    display: block;
     margin-bottom: 32px;
-    margin-left: 17%;
+    margin-left: auto;
+    margin-right: auto;
     height: 530px;
     max-width: 957px;
     width: 100%;
+    border: none;
 
     @media (max-width: $tablet-width-only) {
-      margin-bottom: 12px;
-      margin-left: 35px;
-      margin-right: 35px;
-      max-width: 698px;
+      margin-bottom: 16px;
+      padding-left: 35px;
+      padding-right: 35px;
+      min-width: 698px;
       height: 545px;
     }
 
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 7px;
+      margin-bottom: 25px;
       margin-left: 0;
       margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      min-width: 320px;
       height: 250px;
     }
   }
@@ -78,7 +84,6 @@
   p {
     display: inline;
     position: relative;
-    padding: 5px;
     margin-left: 33.2%;
     font-size: 16px;
     line-height: 22px;
@@ -86,6 +91,7 @@
 
     @media (max-width: $tablet-width-only) {
       margin-left: 18.2%;
+      padding: 5px;
     }
 
     @media (max-width: $mobile-width-only) {
@@ -108,10 +114,10 @@
       content: "";
       position: absolute;
       left: -40px;
-      top: 5px;
+      top: 0;
       width: 26px;
       height: 20px;
-      background-image: url("../../img/post.svg");
+      background-image: url("../img/post.svg");
 
       @media (max-width: $tablet-width-only) {
         left: -35px;
@@ -120,7 +126,7 @@
 
       @media (max-width: $mobile-width-only) {
         left: 9.5%;
-        top: 5px;
+        top: 7px;
       }
     }
   }
@@ -137,11 +143,11 @@
 .contacts__telephone {
   display: inline;
   position: relative;
-  margin-left: 112px;
+  margin-left: 120px;
   padding: 5px;
   font-size: 16px;
   line-height: 32px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
   color: $black-05;
 
   @media (max-width: $tablet-width-only) {
@@ -166,11 +172,11 @@
   &::after {
     content: "";
     position: absolute;
-    left: -34px;
+    left: -33px;
     top: 2px;
     width: 22px;
     height: 23px;
-    background-image: url("../../img/phone.svg");
+    background-image: url("../img/phone.svg");
 
     @media (max-width: $tablet-width-only) {
       top: 5px;
@@ -178,8 +184,8 @@
     }
 
     @media (max-width: $mobile-width-only) {
-      top: 6px;
-      left: 18%;
+      top: 8px;
+      left: 18.5%;
     }
   }
 }

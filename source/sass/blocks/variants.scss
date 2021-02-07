@@ -56,18 +56,20 @@
 .variants__item {
   position: relative;
   z-index: 1;
+  width: 30%;
 
   @media (max-width: $tablet-width-only) {
     margin-bottom: 52px;
+    width: 42.5%;
 
     img {
       object-fit: cover;
-      width: 270px;
     }
   }
 
   @media (max-width: $mobile-width-only) {
     margin-bottom: 44px;
+    width: 100%;
   }
 
   &--ring {
@@ -85,7 +87,7 @@
       width: 180px;
       height: 180px;
       z-index: -1;
-      background-image: url("../../img/ring.svg");
+      background-image: url("../img/ring.svg");
       background-size: cover;
 
       @media (max-width: $tablet-width-only) {
@@ -115,7 +117,7 @@
         position: absolute;
         width: 47px;
         height: 47px;
-        background-image: url("../../img/square.svg");
+        background-image: url("../img/square.svg");
       }
 
       &::after {
@@ -138,7 +140,7 @@
       top: -32px;
       width: 95px;
       height: 95px;
-      background-image: url("../../img/ring.svg");
+      background-image: url("../img/ring.svg");
       background-size: cover;
 
       @media (max-width: $tablet-width-only) {

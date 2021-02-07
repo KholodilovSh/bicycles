@@ -9,39 +9,39 @@
   height: 832px;
   color: $white;
   background-color: $black;
-  background-image: url("../../img/bike_desktop@1x.png");
+  background-image: url("../img/bike_desktop@1x.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
   @media (min-resolution: 1.5dppx) {
-    background-image: url("../../img/bike_desktop@2x.png");
+    background-image: url("../img/bike_desktop@2x.png");
   }
 
   @media (max-width: $tablet-width-only) {
     display: block;
     height: 347px;
-    background-image: url("../../img/bike_tablet@1x.png");
+    background-image: url("../img/bike_tablet@1x.png");
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url("../../img/bike_tablet@2x.png");
+      background-image: url("../img/bike_tablet@2x.png");
     }
   }
 
   @media (max-width: $mobile-width-only) {
     height: 396px;
-    background-image: url("../../img/bike_mobile@1x.png");
+    background-image: url("../img/bike_mobile@1x.png");
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url("../../img/bike_mobile@2x.png");
+      background-image: url("../img/bike_mobile@2x.png");
     }
   }
 }
 
 .main-header__link {
   position: absolute;
-  top: 325px;
-  left: 19.5%;
+  top: -92px;
+  left: -4;
   z-index: 1;
   background: transparent;
 
@@ -60,6 +60,7 @@
 
 .main-header__nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: -390px;
   margin-bottom: 9px;
@@ -126,7 +127,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 20px;
+      top: 25px;
       right: 14px;
       width: 23px;
       height: 1px;
