@@ -53,24 +53,30 @@
   }
 
   iframe {
+    display: block;
     margin-bottom: 32px;
-    margin-left: 17%;
+    margin-left: auto;
+    margin-right: auto;
     height: 530px;
     max-width: 957px;
     width: 100%;
+    border: none;
 
     @media (max-width: $tablet-width-only) {
-      margin-bottom: 12px;
-      margin-left: 35px;
-      margin-right: 35px;
-      max-width: 698px;
+      margin-bottom: 16px;
+      padding-left: 35px;
+      padding-right: 35px;
+      min-width: 698px;
       height: 545px;
     }
 
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 7px;
+      margin-bottom: 25px;
       margin-left: 0;
       margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      min-width: 320px;
       height: 250px;
     }
   }
@@ -120,7 +126,7 @@
 
       @media (max-width: $mobile-width-only) {
         left: 9.5%;
-        top: 5px;
+        top: 7px;
       }
     }
   }
@@ -178,8 +184,8 @@
     }
 
     @media (max-width: $mobile-width-only) {
-      top: 6px;
-      left: 18%;
+      top: 8px;
+      left: 18.5%;
     }
   }
 }

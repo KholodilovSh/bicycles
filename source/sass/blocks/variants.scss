@@ -56,18 +56,20 @@
 .variants__item {
   position: relative;
   z-index: 1;
+  width: 30%;
 
   @media (max-width: $tablet-width-only) {
     margin-bottom: 52px;
+    width: 42.5%;
 
     img {
       object-fit: cover;
-      width: 270px;
     }
   }
 
   @media (max-width: $mobile-width-only) {
     margin-bottom: 44px;
+    width: 100%;
   }
 
   &--ring {
